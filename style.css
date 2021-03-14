@@ -1,0 +1,864 @@
+
+
+    * {padding: 0;
+      margin: 0;
+      box-sizing: border-box;       
+    }
+   a {
+       text-decoration: none;
+   }
+
+    #caution{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #F7F7F7;
+        color:black;
+    }
+
+    #caution a{
+        color:black;
+         box-sizing: border-box;
+         border-bottom: #222 solid 1px;
+    }
+
+    #H{
+        margin-right: 200px;
+    }
+
+    section,.container,.atricle,.mainnav,
+    .Information,.introsection
+    {   padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .mainnav {
+     
+        padding-top: 10px;
+        margin-right: 70px;
+        margin-left: 70px;
+        text-decoration: none;
+        background-color:white;
+        color: black;
+        
+    }
+
+    .allnav{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        
+    }
+   
+     .icon{
+         align-items: center;
+         position: absolute;
+         margin-top: 10px;
+        }
+     
+    
+    .icon a span{
+        
+        color:#FF385C;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 20px;
+        align-items: center;
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+   
+
+    .icon a::before{
+        content: '\f834';
+        font-family: 'Font Awesome 5 Brands';  
+        color: #FF385C;
+        position: absolute;
+        font-weight: 800;
+        font-size: xx-large;
+        justify-content: center;
+        padding-bottom: 5px;
+
+    }
+
+    
+
+    .allnav{
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+    }
+    .allnav span{
+
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 20px;
+        box-sizing: border-box; 
+    }
+
+    .allnav span a{
+        color:black;
+        border-radius: 22px;
+        box-sizing: border-box;
+        background: white;
+        margin-right: 30px;
+        line-height: 1.43;
+
+    }
+
+    .signup{
+        color:black;
+        box-sizing: border-box;
+        border-radius: 20px 20px 20px 20px;
+        display: inline-block;
+        border: lightgray;
+        box-shadow: 0px 1px 1px 1px lightgray;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+  
+    }
+   /* 가입하기 */
+    
+  
+   .clik{
+        opacity: 1;
+        visibility: hidden;
+        z-index: 9;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0; 
+        background: rgba(0,0,0, 0.5);
+        transition: opacity .2s ease;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        position: fixed;
+
+   }
+  
+
+   .full-bg{
+       position: relative;
+       top:0;
+       right: 0;
+       bottom: 0;
+       left: 0;  
+   }
+
+   .clik-on-off{
+       display: none;
+   }
+
+   .clik-on-off:checked +.clik{
+       opacity: 1;
+       visibility: visible;
+   }
+  
+   .clik-on-off:checked +.clik .signupcontainer{
+       top: 0;
+   }
+
+     .signupcontainer{
+      transition: top.25s ease;
+      background-color:white;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      top:20%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 568px;
+      margin: auto;
+      position: fixed;
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      height: 370px;
+      margin-top: 90px;
+    }
+      
+  
+  .clik .btnsign-upF{
+    cursor: pointer;
+      box-sizing: border-box;
+      border-radius: 10px 10px 10px 10px;
+      border: rgb(69, 104, 178);
+      background-color: rgb(69, 104, 178);
+      color: white;
+      width: 504px;
+      height: 48px;
+      padding-left: 22px;
+      padding-right: 22px;
+     
+  }
+
+  .clik .btnsign-upF {
+      margin-bottom: 20px;
+  }
+
+   
+  
+  .clik .btnsign-upG{
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color:white;
+    border-radius: 10px 10px 10px 10px;
+    border:gray solid 1px; 
+    width: 504px;
+    height: 48px;
+    color:black;
+    margin-bottom: 10px;
+
+}
+.clik .btnsign-upG img{
+    width: 1rem;
+    height: 1rem;
+}
+ 
+     .or{
+         box-sizing: border-box;
+       
+     }
+
+     .or::before{
+         content:"  ";
+         display: inline-block;
+         height: 1px;
+         margin: 0 20px 3px 0;
+         width: 210px;
+         background-color: lightgray;
+     }
+     
+     .or::after{
+        content:"  ";
+        display: inline-block;
+        height: 1px;
+        margin: 0  0 3px 20px;
+        width: 210px;
+        background-color: lightgray;
+    }
+    
+    .btnsign-upEbox{
+
+        display: block;
+        box-sizing: border-box;
+        border-bottom: lightgray 1px solid;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .clik .btnsign-upE {
+        cursor: pointer;
+
+        box-sizing: border-box;
+        color:white;
+        display: block;
+        width: 504px;
+        height: 48px;
+        margin: 0;
+        padding-top: 15px;
+        border-radius: 10px 10px 10px 10px;
+        background-color:rgb(255, 90, 95);
+        text-align: center;
+        
+        
+
+    }
+    
+
+    .btnsign-up {
+        display: block;
+        color:black;
+        margin-top: 10px;
+        align-self: flex-start;
+        box-sizing: border-box;
+        padding-top: 10px;
+        
+    }
+   
+    .clik .btnsign-up a{
+        color: cadetblue;
+        cursor: pointer;
+        border: none;
+        margin: 0;
+        padding: 3px;
+        
+    }
+
+
+    
+    .close-signup {
+    
+        cursor: pointer;
+        box-sizing: border-box;
+        position:relative;
+        align-self: start;
+        border-radius: 50%;
+        box-shadow: 0 2px 2px 2px lightgrey;
+        padding: 3px;
+        margin-bottom: 8px;
+
+      }
+
+      .close-box{
+          
+        background-color:white;
+        border: none;
+
+      }
+   
+    
+
+
+
+    /* 메뉴 추가 */
+    .globutton {
+        margin-right: 25px;
+        display: block;
+        box-sizing: border-box;
+        background-color: white;        
+        border-radius: 20px;
+        border: white 1px;
+
+    }
+
+    .globutton i{
+        color:black;
+
+    }
+
+
+#fieldbar{
+    margin-right: 70px;
+     margin-left: 70px;
+    margin-top: 32px;
+    padding-left: 80px;
+    padding-right: 80px ;
+    margin-bottom: 32px;
+    border: solid white;
+
+}
+/* 필드 */
+
+
+fieldset .field label{
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+#rooms{
+    border-bottom: #222 solid 1px;
+
+}
+fieldset .field a{ 
+    text-decoration: none;
+    color:black;
+}
+
+.fnew{
+   
+    box-sizing: border-box;
+    margin-left: 5px;
+    color: #EBEBEB;
+    padding: 7px;
+    font-size: 10px;
+    background-color: #cc2643;
+    border-radius: 5px;
+}
+/* 서치바 */
+
+.Searchbarcontainer{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+ #Searchbar{
+    
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 10px 10px;
+    flex-direction: row;
+
+} 
+
+
+.SearchE input{
+border: white ;
+}
+
+.SearchEc button{
+    background-color: white;
+    color: black;
+    border: white;
+}
+
+.SearchEc {
+    border-radius: 3%;
+    display: block;
+    box-sizing: border-box;
+    border-left: #484848 1px solid;
+    padding: 16px;
+}
+
+
+.SearchE {
+    border-radius: 3%;
+    display: block;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.SearchE input{
+    color:gray;
+}
+
+.SearchB{
+    padding-top: 16px;
+    padding-left: 21px;
+    padding: 11px;
+}
+
+.SearchB button{
+    color:white;
+    width: 90px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #cc2643;
+    background-color: #cc2643;
+}
+
+
+.SearchEc button{
+    color:gray;
+}
+
+
+
+/* 섹션 */
+
+
+#headerline{
+    
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    }
+ 
+    #headerline h1{ color: #cc2643;}
+
+
+
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    padding-left: 0.8;
+    padding-right: 0.8;
+}
+/*  첫번째 grid*/
+.container{
+    margin-left: 70px;
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-right: 70px;
+    display: grid;
+    grid-template-columns:repeat(3,525px);
+    column-gap: 15px;
+    
+}
+
+.pic{
+    position: relative;
+}
+.newbox{
+    position:absolute;
+    top: 25px;
+    left: 20px;
+    background-color: white;
+    color: #222;
+    font-weight: 800;
+    font-size: 10px;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.pic img{
+    border-radius: 10% 10% 0 0;
+    width: 100%;
+    height: 250px;  
+}
+.text{
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.content{
+    box-sizing: border-box;
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 2px 2px lightgray;
+  
+}
+
+/* 소개 */
+
+.container-main{
+  
+    display: block;
+    color: white;
+    margin-top: 30px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+
+.container-main-text{
+    margin-bottom: 30px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
+    box-sizing: border-box;
+  
+
+}
+    .CONTENT{
+        margin-left: 70px;
+        margin-right: 70px;
+        box-sizing: border-box;
+        display:flex;
+        justify-content:space-between;
+        background-color: black;
+
+    }
+
+    .clikall a{
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+
+.container-main-content-text{
+    padding: 15px;
+    background-color: #222;
+    border-radius: 0 0 15px 15px; 
+
+}
+
+
+
+
+.container-main-contentbox{
+    margin-left: 70px;
+    margin-right: 70px;
+  
+    display: grid;
+    gap:15px;
+    margin-top: 10px;
+    background-color:black;
+    color: aliceblue;
+    grid-template-columns:repeat(4,389px);
+    grid-template-rows: repeat(2,321px);
+    box-sizing: border-box;
+    
+  
+}
+
+.container-main-picone img{
+    width: 100%;
+    height: 560px;
+    border-radius: 15px 15px  0 0;
+}
+.container-main-pic img{
+    width: 100%;
+    height: 240px;
+    border-radius: 15px 15px  0 0;
+
+}
+
+.container-main-picS img{
+    width: 100%;
+    height: 240px;
+    border-radius: 15px 15px  0 0;
+
+}
+
+.container-main-picL img{
+    width: 100%;
+    height: 230px;
+    border-radius: 15px 15px  0 0;
+
+}
+
+
+
+.container-main-content:first-child{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.container-main-content:last-child{
+    grid-column: 3/5;
+    grid-row: 2/3;
+
+}
+
+
+
+
+/* 기사 */
+
+.atricle{
+    box-sizing: border-box;
+    background-color: white;
+    align-items: stretch;
+    color: black;
+    display: flex;
+    flex:1;
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.atricle_headline{
+    flex: 1;
+
+   
+
+}
+
+
+.headline1{
+    margin-bottom: 20px;
+    padding-right: 16px; 
+}
+
+.material{
+ flex: 1;
+ display: block;
+  box-sizing: border-box;
+  line-height: 30px;
+  
+  
+}
+
+
+
+
+
+
+
+
+.together{
+    display: block;
+    font-size: 14px;
+    margin-top: 24px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid black;
+    text-align: center;
+    width: 150px;
+}
+.together a{
+    color: black;
+}
+/* 동참하기~~ */
+
+/* 최신정보 */
+.Information{
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #F7F7F7;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.infosection {
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    flex-grow:1;
+
+}
+
+.infoheading{
+ position: relative;
+  display: block;
+ 
+}
+.info{
+    justify-content: space-between;
+    flex: 1;
+    padding-top: 40px;
+    margin-left: 16px;
+}
+
+.heading{
+    padding-bottom: 16px;
+}
+
+.guest .host .save .etc {
+    display: inline;
+}
+.strong{
+    display: block;
+}
+.strong{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top:solid lightgray;
+    color:black;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.infoheading{
+    display: inline;
+}
+
+.strong a{
+    font-size: 14px;
+    color:#484848;
+
+}
+
+.nomal a{
+    font-size: 14px;
+    color:#484848;
+}
+
+
+.introsection{
+    margin-left: 70px;
+    margin-right: 70px;
+    box-sizing: border-box;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.intro{
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.introlist, .introlist1 {
+    display: block;
+    box-sizing: border-box;
+    flex: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+    
+    
+
+
+.introlist li,.introlist1 li{
+    list-style-type: none;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+
+.introlist li a,.introlist1 li a{
+    color: #222;
+}
+
+.introheading li a,.introlist1 li a{
+ text-decoration: none;   
+ color: #484848;
+
+}
+
+/* footer */
+
+
+.footer{
+    padding-top:24px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    border-top: 1px solid #484848;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer:first-child{
+    flex:3;
+}
+
+.footer:nth-last-child(){
+    flex:1;
+}
+   
+
+.footerp a{
+    color:#222;
+}
+
+.footeretc button span{
+    text-decoration: underline;
+}
+
+.imglinks span i{
+    justify-content: space-evenly;
+    color:black;
+}
+
+.footeretc button{
+    border: white;
+    background-color: white;
+}
+.imglinks span{
+    margin-left: 5px;
+}
+
+.imglinks span img{
+    width: 1em;
+    height: 1em;
+
+}
